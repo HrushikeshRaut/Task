@@ -18,53 +18,78 @@
     <header>
         <div class="head">
         <figure class="fig">
-            <img src="./images/unilogo.png" alt="logo" height="200" width="200">
+            <img style="color: green;" src="./images/unilogo.png" alt="logo" height="100" width="200" style="background-attachment: fixed;">
         </figure>
         <h2 class="tag">Welcome To mumbai University </h2>
         </div>
-        <figure >
-        <img class="pic" src="./images/photo-1607237138185-eedd9c632b0b.jpg" height=200 width=400 alt="university image" >
-        <figcaption align="center">University Campus</figcaption>
-    </figure>
 
+         <figure >
+            <figcaption align="center">University Campus</figcaption>
+        <img align="center" src="./images/photo-1607237138185-eedd9c632b0b.jpg"  alt="university image" style="height:400px;width:100%;border-radius: 20px;background-color: skyblue;">
+       </figure>
+   
     </header>
+
     <!-- main part of the web page -->
     <main >
         <section>
             <!-- enrollment form starts here -->
-            <div class="main">
-            <form action="" align="center">
-                <fieldset><legend style="font-size: large;"><i>Enrollment form</i></legend>
+                <table style="background-color: skyblue;width: 100%;border: solid 2px black;padding-left:25%;color: green;border-spacing: 10px;">
+                <form action="" >
+                    <div align="center" style="color: green;">
+                <legend style="font-size: large"><i style="font-size: 40px;text-decoration-color:skyblue;text-indent: 5rem;" >Enrollment form</i></legend>
+                   </div>
                     <!-- text box for name -->
-                   <p>
-                    <label for="fname">first name : </label>
-                    <input type="text"  style='color:red' style='font:bold' fname" id="fname" placeholder="type here">
-                   </p>
+                   <!-- <p align="center"> -->
+                    <tr>
+                    <td><label for="fname">first name : </label></td>
+                    <td><input type="text"   style='font:bold' name="fname" id="fname" placeholder=""></td>
+                   </tr>
+
+                   <!-- </p> -->
+                   
                    <!-- text box for last name -->
-                   <p>
-                   <label for="lname">last name : </label>
-                   <input type="text" name="lname" id="lname" placeholder="type here">
-                   </p>
+
+                   <!-- <p align="center"> -->
+                    <tr>
+                  <td><label for="lname">last name : </label></td>
+                  <td> <input type="text" name="lname" id="lname" placeholder=""></td>
+                  </tr>
+                   <!-- </p> -->
+
+                   
+
                     <!-- text box for mail -->
-                   <p>
-                    <label for="mail">Email id : </label>
-                    <input type="email" name="mail" id="mail" placeholder="xyz@mail.com">
-                   </p>
-                    <!-- contact details -->
-                   <p>
-                    <label for="contact">Contact Number : </label>
-                    <input type="tel" name="contact" id="contact"
-                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="5555555555">
-                   </p>
+                   <!-- <p align="center">  -->
+                    <tr>
+                    <td><label for="mail">Email id : </label></td>
+                    <td><input type="email" name="mail" id="mail" placeholder=""></td>
+                    </tr>
+                   <!-- </p> -->
+                   
+                    <!--contact details -->
+
+                   <!-- <p align="center"> -->
+                    <tr>
+                    <td><label for="contact">Contact Number : </label></td>
+                    <td><input type="tel" name="contact" id="contact"
+                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder=""></td>
+                </tr>
+                   <!-- </p> -->
+                   
                    <!-- Date of birth -->
-                   <p>
-                    <label for="dob">Date of birth : </label>
-                    <input type="number" name="dob" id="dob" min="1" max="31" step="1">
-                   </p>
+                   <!-- <p align="center">  -->
+                 <tr>
+                    <td><label for="dob">Birthdate :</label></td>
+                   <td> <input type="number" name="dob" id="dob" min="1" max="31" step="1" style="width:265px;"></td>
+                </tr>
+                   <!-- </p> -->
+                   
                             <!-- month slection dropdown list -->
-                   <p>
-                    <label for="month">month : </label>
-                    <select name="month" id="month">
+                   <!-- <p align="center"> -->
+                    <tr>
+                    <td><label for="month">Birthmonth : </label></td>
+                   <td><select style="font-size: 30px;" name="month" id="month">
                         <option value="" selected></option>
                         <option value="">january</option>
                         <option value="">february</option>
@@ -79,66 +104,90 @@
                         <option value="">november/option>
                         <option value="">december</option>
                     </select>
-                   </p>
+                </td>
+                </tr>
+                   <!-- </p> -->
+                   
                          <!-- year selection -->
-                   <p>
-                    <label for="yr">Year : </label>
-                <input type="number" name="yr" id="ye" min="1975" max="2005" step="1">
-                   </p>
-
-                   <p>
-                    <label for="">Gender : </label>
-                    <input type="radio" name="gender" id="gender">male
-                    <input type="radio" name="gender" id="gender">female
-                   </p>
+                   <!-- <p align="center"> -->
+                    <tr>
+                   <td> <label for="yr">BirthYear : </label></td>
+                <td><input type="number" name="yr" id="ye" min="1975" max="2005" step="1" style="width:265px";></td>
+                  </tr>
+                   <!-- </p> -->
+                 
+                   <!-- <p align="center"> -->
+                    <tr>
+                    <td><label for="">Gender : </label></td>
+                    <td><input type="radio" name="gender" id="gender" style="width:20px;height:20px;">
+                        <label for="gender" style="font-size: 20px;">male</label>
+                    <input type="radio" name="gender" id="gender" style="width: 20px;height: 20px;">
+                    <label for="gender" style="font-size: 20px;">male</label>
+                </td>
+                   </tr>
+                   <!-- </p> -->
+                   
                 <!-- checkbox for qualification-->
                 <!-- <fieldset> -->
-                   <p>
-                    <label for="">Qualification : </label>
+                   <!-- <p align="center"> -->
+                    <tr>
+                    <td><label for="">Qualification : </label></td>
                     
-                    <input type="checkbox" name="ssc" id="ssc" >S.S.C
-                    
-                    <input type="checkbox" name="hsc" id="hsc">H.S.C
-                    
-                    <input type="checkbox" name="ug" id="ug">U.G
-                    
-                    <input type="checkbox" name="pg" id="pg">P.G
-                    
-                    <input type="checkbox" name="phd" id="phd">P.H.D
-                   </p>
+                  <td>  
+                    <input type="checkbox" name="ssc" id="ssc" style="height: 20px;width: 20px;">
+                     <label for="" style="font-size: 20px;">SSC</label>
+                    <input type="checkbox" name="hsc" id="hsc" style="height: 20px;width: 20px;">
+                    <label for="" style="font-size: 20px;">hsc</label>
+                   <input type="checkbox" name="ug" id="ug" style="height: 20px;width: 20px;">
+                   <label for="" style="font-size: 20px;">ug</label>
+                    <input type="checkbox" name="pg" id="pg" style="height: 20px;width: 20px;">
+                    <label for="" style="font-size: 20px;">pg</label>
+                    <input type="checkbox" name="phd" id="phd" style="height: 20px;width: 20px;">
+                    <label for="" style="font-size: 20px;">phd</label>
+                </td>
+                </tr>
+                   <!-- </p> -->
                 <!-- </fieldset> -->
-                <br>
+                
                 <!-- course slection drop down list -->
                 <!-- <fieldset> -->
-                   <p>
-                    <label for="" id="course">Course Selction : </label>
-                      <select name="" id="">
+                   <!-- <p align="center"> -->
+                    <tr>
+                    <td><label for="" id="course">Course Selction : </label></td>
+                     <td> <select style="width:265px;height:35px;" name="" id="">
                         <optgroup label="Under Grad">
                             <option value="" selected></option>
-                                <option value="">B.B.A</option>
+                                <option value="" >B.B.A</option>
                                 <option value="">B.TECH</option>
                         </optgroup>
                         <optgroup label="Post Grad">
                             <option value="">M.B.A</option>
                             <option value="">M.TECH</option>
                         </optgroup>
-                      </select> 
-                   </p>
+                      </select></td>
+                    </tr>
+                   <!-- </p> -->
+                   
                 <!-- </fieldset> -->
                 <!-- write about yourself -->
-                <p>
-                  <label for="">About Youself : </label>
-                  <textarea name="" id="" cols="30" rows="10" placeholder="type here a message" style="resize: none;"></textarea>
-                </p>
+                <!-- <p align="center"> -->
+                    <tr>
+                  <td><label for="">About Youself : </label>
+                  <td><textarea name="" id="" cols="30" rows="10" placeholder="type here a message" style="resize: none;font-size: 20px;width: 265px;height:100px ;"></textarea></td>
+                </tr>
+                <!-- </p> -->
                 <!-- sumbit and reset button   -->
-                
-                   <p>
-                    <input type="button" value="SUMBIT">
-                    <input type="button" value="RESET">
+                 
+                  <tr>
+                   <!-- <p align="center"> -->
+                    <td></td>
+                    <td><input type="button" value="SUBMIT" class="but" style="font-size:30px;width:130PX;background-color: antiquewhite;padding-bottom: 20px;">
+                    <input type="button" value="RESET" class="but" style="font-size:30px;width:130PX;background-color:antiquewhite ;"></td>
+                </tr>
                    </p>
               </fieldset>
             </form>
-        </div>
+        </table>
         </section>
     </main>
     <!-- footer of the page -->
@@ -146,15 +195,19 @@
           <!-- logo section -->
           <div class="foot"></div>
         <section>
-        <figure class="fig1">
-            <img  src="./images/facebook.jpg" alt="facebooklogo">
-            <img  src="./images/tweeter.jpg" alt="tweeterlogo">
+            <div class="fig1">
+        <figure >
+            <img  src="./images/facebook.jpg" alt="facebooklogo" style="width: 40px;height: 40px;">
+            <img  src="./images/tweeter.jpg" alt="tweeterlogo" style="height:40px;width: 40px;">
+        </div>
         </figure>
     </div>
         </section>
         <!-- copyrigt section -->
         <section>
-        <h4 >&lt&lt&lt&lt&copyHrushikeshRaut&copy&gt&gt&gt&gt</h4>
+            <div class="copy" align="left">
+        <h4  >&lt&lt&lt&lt&copyHrushikeshRaut&copy&gt&gt&gt&gt</h4>
+    </div>
     </section>
 
     </footer>
